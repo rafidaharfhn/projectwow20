@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+    padding: 50px;
+    height: 100vh;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar::-webkit-scrollbar {
+    display: none;
+}
+
+.wowpic {
+    width: 80%;
+}
+
+.edittext {
+    margin-top: 50px;
+}
+
+.rightsect {
+    
+    background-image: url(img/scroll2.png);
+    background-attachment: fixed;
+    padding: 50px;
+}
+
+.disable {
+    cursor: not-allowed;
+}
+
+
+/*=== NAVBAR === */
+
+.nav-link{
+    margin-right: 25px;
+    margin-top: -10px;
+    text-transform: uppercase;
+    color: #55803A !important;
+    font-size: 15px !important;                
+    font-family: 'Montserrat', sans-serif !important;        
+    
+}    
+.navbar {
+    background-color:rgb(243, 230, 189);
+    -webkit-filter: drop-shadow(0, 0, 0, 0.7);
+    filter: drop-shadow(0, 0, 0, 1);      
+    height: 60px;  
+}    
+.navbar-nav{        
+    margin-top: 20px;
+    text-align: right;
+    padding-bottom: 10px;
+}
+.navbar-brand img {
+    position: absolute;
+    top: 5px;
+    margin: 0;        
+}   
+
+/*---- Navbar -----*/
+.navbar {
+    background-color:rgb(243, 230, 189);
+    -webkit-filter: drop-shadow(0, 0, 0, 0.7);
+    filter: drop-shadow(0, 0, 0, 1);        
+    padding-bottom: 0px !important;
+}    
+.navbar-nav{        
+    margin-top: 20px;
+    padding-bottom: 15px;
+}
+/* .navbar-transparent{
+    background-color: transparent!important;
+}     */
+.navbar-brand img {
+    position: absolute;
+    top: 5px;
+    margin: 0;        
+}      
+.modal-header img{    
+    width: 220px;     
+}
+
+.modal-footer button{
+    background-color: #55803A;
+    border: none;
+}
+
+
+.nav-link:hover::after{
+    content: '';
+    display: block;
+    border-bottom: 3px solid rgb(145, 177, 97);
+    width: 50%;
+    margin: auto;
+    padding-bottom: 5px;
+    margin-bottom: -8px;
+}
+
+.navbar .tombol:hover{
+    background-color:black;    
+    color:white;    
+}
+
+.dropdown-item{
+    color: rgb(0, 0, 0);
+}
+.tombol{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif !important;
+    background-color:#55803A;
+    margin-top: -10px;
+    /* box-shadow: 2px 2px black; */
+    font-size: 15px;
+    border: none;
+    border-radius: 50px;                
+    padding-right: 18px;
+    padding-left: 18px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    
+}   
+/* Papan */
+.papan{
+    width: 220px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+form .btn{
+    background-color: rgb(240, 212, 121);
+    border: none;
+    color: #55803A;
+    font-weight: 700;    
+    width: fit-content;
+
+}
+
+form .btn:hover{
+    background-color: black
+
+}
+/* ##### AKHIR NAVBAR ##### */
+
+
+
+@media screen and (max-width: 768px) { 
+    
+
+    .sidebar {
+      position: relative !important;
+    }
+    
+    .edittext {
+        margin: 0;
+    }
+    /*=== NAVBAR === */
+    .navbar-brand img{
+        width: 80px;
+    }
+
+    .nav-link{            
+        margin-right: 0;
+        margin-top: 0px;                                                   
+        color: #55803A !important;
+        font-size: 14px !important;        
+        padding-bottom: 5px !important; 
+        text-transform: none!important;
+        display: unset !important;
+        font-family: 'Montserrat', sans-serif !important;
+        position:sticky ;    
+    }
+
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: none;                
+        width: 0%;
+        margin: 0;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+    
+    }
+
+    .navbar {
+        background-color:rgb(243, 230, 189);
+        -webkit-filter: drop-shadow(0, 0, 0, 0.7);
+        filter: drop-shadow(0, 0, 0, 1);        
+    }    
+    .navbar-nav{        
+        margin-top: 20px;
+        text-align: right !important;
+        text-transform: none;        
+        
+    }
+
+    .navbar-brand img {
+        position: absolute;
+        top: 5px;
+        margin: 0;        
+    }      
+
+    .tombol{
+        font-family: 'Montserrat', sans-serif !important;
+        text-transform: none;        
+        margin-top: 0px;        
+        font-size: 15px;
+        border: none;
+        border-radius: 50px;                
+        padding-right: 12px;
+        padding-left: 12px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        
+
+        border-radius: 50px;
+        font-size: 15px;
+        color: white;
+        background-color:#55803A;
+        border: none;
+    
+    }
+    /* ##### AKHIR NAVBAR ##### */
+
+    .papan{
+        width: 160px;
+        margin-top: 10px;
+        margin-bottom: 0px;
+        
+    }
+    
+  }

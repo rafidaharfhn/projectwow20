@@ -1,0 +1,185 @@
+/* NAVBAR */
+.navbar-brand{
+    font-size: 32px;
+    font-family: 'Courier New', Courier, monospace;    
+    
+}
+.nav-link{    
+    color: #55803A !important;
+    font-size: 14px !important;        
+    padding-bottom: 5px !important; 
+    display: unset !important;
+    font-family: 'Montserrat', sans-serif !important;
+    position:sticky ;    
+}
+
+
+
+/* JUMBOTRON */
+.jumbotron{
+    background-image: url(img/bg-jb.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    height: 100vh !important;    
+}
+
+.jumbotron .display-4{
+    color: rgb(240, 212, 121);
+    text-shadow: 4px 4px 3px black;    
+    margin-top: 50px;
+    font-weight: 700;
+    font-size: 50px;
+    color: rgb(240, 212, 121);
+}
+.jumbotron p{
+    font-size: 22px;
+    color: brown;
+    text-shadow: 1px 2px 1px black;    
+    /* color: rgb(240, 212, 121);
+    text-shadow: 2px 2px black; */
+}
+.jumbotron .signin{
+    background-color: burlywood;
+    color: brown;
+    box-shadow: rgb(168, 126, 71) 4px 5px ;
+    font-size: 18px;    
+    border: none;
+    border-radius: 100px;
+    margin-top: 2px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: 'Montserrat', sans-serif !important;
+    text-transform: uppercase;
+}
+
+.jumbotron .signin:hover{
+    background-color: black;
+    color: white;
+}
+
+/* TOMBOL */
+.tombol{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif !important;
+    border-radius: 50px;
+    background-color:#55803A;
+    border: none;
+
+}
+
+.bg-scroll{
+    background-image: url(img/scroll2.png);
+    min-height: 30000px;
+}
+
+/* DESKTOP VER */
+@media (min-width: 992px) {
+
+    /*---- Navbar -----*/
+    .nav-link{
+        margin-right: 25px;
+        text-transform: uppercase;
+        color: #55803A !important;
+        font-size: 14px !important;                
+        font-family: 'Montserrat', sans-serif !important;    
+        text-shadow: 1px 1px #bbbbbb;    
+        
+    }    
+    .nav-link:hover::after{
+        content: '';
+        display: block;
+        border-bottom: 3px solid rgb(145, 177, 97);
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .tombol{
+        text-transform: uppercase;
+        font-family: 'Montserrat', sans-serif !important;
+        background-color:#55803A;
+        box-shadow: 2px 2px black;
+        border-radius: 50px;        
+        border: none;
+        padding-right: 18px;
+        padding-left: 18px;
+        
+    }
+    .navbar .tombol:hover{
+        background-color:white;
+        color:#55803A;    
+    }
+
+    /*---- Jumbotron -----*/
+    .jumbotron{
+        margin-top: -130px;
+        height: 100vh;
+    }    
+    .jumbotron .display-4{
+        color:  rgb(240, 212, 121);
+        text-shadow: 4px 4px 3px black;    
+        margin-top:30px;
+        font-weight: 700;
+        font-size: 68px;            
+    }
+    .jumbotron p{
+        font-size: 24px;
+        color: brown;
+        text-shadow: 1px 2px 1px black;    
+        
+    }   
+    
+    .jumbotron .signin{
+        background-color: rgb(240, 212, 121);
+        color: brown;
+        box-shadow: rgb(168, 126, 71) 4px 5px ;
+        font-size: 24px;    
+        border: none;
+        border-radius: 100px;
+        margin-top: 0px;
+        padding-left: 60px;
+        padding-right: 60px;
+        font-family: 'Montserrat', sans-serif !important;
+        text-transform: uppercase;
+    }
+
+    .jumbotron .signin:hover{
+        background-color: black;
+        color: white;
+    }
+
+    .bg-scroll{
+        background-image: url(img/scroll2.png);
+        height: 1800px;
+        position: relative;
+        transform: translateY(90px);
+    }
+}
+
+
+
+
+
+
+
+
+
+/* .jumbotron{
+    background-image: url(img/lihatnew.png);    
+    background-size: cover !important;
+    background-position: center;
+    
+}
+.about{
+    min-height: 400px;
+}
+.timeline{
+    background-color: #eaeaea;
+
+}
+.rangkaian{
+    padding: 20px;
+    border: 2px solid black;
+    margin-top: 20px;
+} */
